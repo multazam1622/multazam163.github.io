@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chancify</title>
+    <link rel="stylesheet" href="materi/materi.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
+    <script src="materi/materi.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">Chancify</span>
+      </div>
+
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">Chancify</span>
+        </div>
+
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="index.html" class="nav-link">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="link">Chancify</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class='bx bx-book-alt icon'></i>
+                <span class="link">Materi</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="hitung.html" class="nav-link">
+                <i class='bx bx-calculator icon'></i>
+                <span class="link">Hitung Cepat</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="latso.html" class="nav-link">
+                <i class='bx bxs-book-open icon'></i>
+                <span class="link">Latihan Soal</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="tombol.html" class="nav-link">
+                <i class='bx bx-question-mark icon'></i>
+                <span class="link">Quis</span>
+              </a>
+            </li>
+            
+          </ul>
+
+          <div class="bottom-cotent">
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-log-out icon"></i>
+                <span class="link">Penyusun</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="overlay"></section>
+
+    <button class="chatbot-toggler">
+      <span class="material-symbols-rounded">mode_comment</span>
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+      <header>
+        <h2>Chancify</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>
+          <p>Hai, apa kabar? 👋<br>Apa yang ingin kamu tanyakan?</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Masukan Pesan..." spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+    </div>
+    <div class="ff">
+        <div class="ww">
+            <div class="uu">
+              <h1 class="w">PELUANG</h1>
+            <h3 class="sub">A. Pengertian </h3>
+              <p class="qq">Peluang atau biasa disebut probabilitas adalah besarnya kemungkinan terjadinya suatu kejadian</p>
+            <h3 class="sub">B. Kaidah Pencacahan </h3>
+              <p class="qq">Kaidah pencacahan adalah cara untuk menghitung banyaknya kemungkinan dari suatu percobaan. Rumus umum untuk kaidah pencacahan adalah rumus perkalian, yaitu:</p> 
+            <div class="y"><p class="t">a x b x c ...</p></div>
+            <h3 class="sub">C. Permutasi </h3>
+             <p class="qq">Permutasi adalah menentukan banyak susunan dengan memerhatikan urutan. Rumusan umum untuk permutasi adalah:</p>  
+            <div class="y"><p class="e">n! = n(n - 1)(n - 2) ...1!</p></div>
+            <h3 class="sub">D. Macam-macam Permutasi </h3>
+              <ol class="o">
+                <li>Permutasi dari unsur-unsur yang berbeda
+                  <div class="y"><p class="p"><sub>n</sub>P<sub>r</sub> = n!/(n-1)!</p></div>
+                <li>Permutasi dari beberapa unsur sama
+                  <div class="y"><p class="q">P = n!/(k!l!m!...)</p></div>
+                <li>Permutasi Siklis
+                  <p >Permutasi siklis atau dikenal dengan permutasi melingkar merupakan permutasi yang disusun menurut suatu putaran tertentu.</p>
+                  <div class="y"><p class="q">P <sub>siklis</sub> = (n - 1)!</p></div>
+              </ol>
+              <div class="qq">
+                <p class="aaaa">Untuk memahami permutasi, pahami contoh soal berikut :</p>
+                <p class="aaaa">Setiap tahun, SMA Pelita Bangsa selalu mengadakan pentas seni. sebelum acara akbar, para siswa mengadakan pemilihan ketua, sekreetaris dan bendahara. Setelah melakukan seleksi, ada 5 orang siswa yang mendaftarkan diri. Banyak cara untuk memilih ketua, sekretaris dan bendahara untuk acara tersebut adalah.</p>
+              <p class="aaaa">Penyelesaian</p>
+              <p class="aaaa">Banyak kandidat yang mendaftar = 5 orang, maka n = 5</p>
+              <p class="aaaa">Karena akan dipilih 3 orang yaitu, ketua sekretaris dan bendahara, maka banyak pilihannya adalah permutasi 3 dari 5</p>
+              <p>P(n,r) = n!/(n-r)!</p>
+              <p>maka, P(5,3) = 5!/(5-3)!</p>
+              <p>P(5,3) = 5!/2!</p>
+              <p>P(5,3) = (5x4x3x2!)/2!</p>
+              <p>P(5,3) = 60</p>
+              <p class="aaaa">Jawaban = 60 cara</p>
+              </div>
+            <h3 class="sub">D. Kombinasi </h3>
+              <p class="qq">Kombinasi adalah menentukan banyak susunan tanpa memerhatikan urutan.</p>  
+              <div class="y"><p class="r"><sub>n</sub>C<sub>r</sub> = n!/((n - 1)!r!)</p></div>
+              <div class="qq">
+                <p class="aaaa">Untuk memahami kombinasi, pahami contoh soal berikut :</p>
+                <p class="aaaa">Seorang peternak akan membeli hewan ternak untuk dipelihara. Dia akan membeli 3 ekor sapi, 4 ekor domba dan 5 ekor kambing. Seorang pedagang mempunyai 6 ekor sapi, 6 ekor domba dan 8 ekor kambing. Banyak cara yang dapat dilakukan untuk memilih hewan ternak yang akan dibeli adalah…</p>
+                <p class="aaaa">Penyelesaian</p>
+                <p class="aaaa">Untuk memilih 3 dari 6 ekor sapi</p>
+                <p>C(n,r) = (n!/r!(n-r)!)</p>
+                <p>C(6,3) = (6!/3!(6-3)!)</p>
+                <p>C(6,3) = (6x5x4x3!)/(3!x3!)</p>
+                <p>C(6,3) = (6x5x4)/(3x2x1)</p>
+                <p>C(6,3) = 20 cara</p>
+                <p class="aaaa">Untuk pemilihan 4 dari 6 ekor domba</p>
+                <p>C(6,4) = 6!/(4!(6-4)!)</p>
+                <p>C(6,4) = (6x5x4!)/(4!x2!)</p>
+                <p>C(6,4) = 15 cara</p>
+                <p class="aaaa">Untuk pemilihan 5 dari 8 ekor kambing</p>
+                <p>C(8,5) = 8!/(5!(8-5)!)</p>
+                <p>C(8,5) = (8x7x6x5!)/(5!x3!)</p>
+                <p>C(8,5) = (8x7x6)/(3x2x1)</p>
+                <p>C(8,5) = 56 cara</p>
+                <p class="aaaa">Maka, banyak cara yang dapat dilakukan untuk memilih hewan ternak yang akan dibeli adalah</p>
+                <p>C(6,3) x C(6,4) x C(8,5)</p>
+                <p>= 20 x 15 x 56</p>
+                <p>= 201556</p>
+                <p>= 16800 cara</p>
+              </div>
+              <h4 class="sub">Perbedaan Permutasi dan Kombinasi </h4>
+              <p class="qq">Perbedaan utama antara permutasi dan kombinasi adalah permutasi memperhatikan urutan elemen yang dipilih, sedangkan kombinasi tidak memperhatikan urutan elemen yang dipilih.</p>  
+              <p class="qq">Agar lebih jelas tentang perbedaan antara permutasi dan kombinasi, perhatikan contoh berikut :</p>  
+              <ol class="a">
+                <li>Permutasi
+                  <ol class="a">
+                    <li>Menyusun kata sandi</li>
+                    <li>Memilih pemenang dengan juara bertingkat (juara 1, 2, dan 3)</li>
+                    <li>Memilih pemenang dengan juara bertingkat (juara 1, 2, dan 3)</li>
+                    <li>Menyusun susunan organisasi (ketua, sekretaris, bendahara)</li>
+                    <li>Menentukan posisi duduk pada meja</li>
+                  </ol>
+                  <li>Kombinasi
+                    <ol class="a">
+                      <li>Memilih kelompok</li>
+                      <li>memilih peserta yang lolos untuk babak selanjutnya</li>
+                      <li>Memilih delegasi</li>
+                      <li>Mengambil dua bola dari wadah</li>
+                    </ol>
+              </ol>
+            <h3 class="sub">F. Peluang Suatu Kejadian </h3>
+              <p class="qq">Peluang suatu kejadian adalah perbandingan antara jumlah suatu kejadian (n(A)) dan semua kemungkinan yang ada (n(S)).</p>  
+              <div class="y"><p class="t">P = n(A)/n(S)</p></div>
+            <h3 class="sub">G. Frekuensi Harapan </h3>
+              <p class="qq">Frekensi harapan adalah harapan banyaknya suatu kejadian yang terjadi dari banyaknya jumlah percobaan yang dilakukan.</p>  
+              <div class="y"><p class="u">F<sub>H</sub> = n.P</p></div>
+              <p class="qq">Keterangan:</p>
+              <p class="qq">n = Banyak percobaan</p>
+              <p class="qq">P = Peluang</p>
+            <h3 class="sub">H. Peluang Komplemen </h3>
+              <p class="qq">Peluang komplemen adalah besarnya ketidakmungkinan terjadinya suatu kejadian. Rumus umumnya adalah.</p>  
+              <div class="y"><p class="u">P<sup>c</sup> = 1 - P</p></div>
+              <p class="qq">Keterangan:</p>
+              <p class="qq">P<sup>c</sup> = Peluang komplemen</p>
+              <p class="qq">P = Peluang</p>
+            <h3 class="sub">I. Peluang Kejadian Majemuk </h3>
+              <p class="qq">Peluang kejadian majemuk adalah cara yang digunakan untuk menghitung peluang yang terjadi jika ada dua atau lebih kejadian.</p>  
+              <ol class="a">
+                <li>Kejadian Saling Bebas
+                  <p>Dua kejadian dikatakan saling bebas jika munculnya kejadian pertama tidak mempengaruhi peluang munculnya kejadian kedua</p>
+                  <div class="y"><p class="i">P(A ∩ B) = P(A) x P(B)</p></div>
+                  <p class="aaaa">Kejadian saling bebas antara kejadian A dan B akan terjadi jika kejadian A tidak mempengaruhi kejadian B dan sebaliknya, untuk memahami peluang kejadian saling bebas, pahami contoh soal berikut :</p>
+                  <p class="aaaa">Dalam pelemparan dua buah mata dadu sekaligus, berapakah peluang keluarnya mata dadu pertama angka 1 dan mata dadu kedua angka 4. </p>
+                  <p>Penyelesaian</p>
+                  <p>Mata dadu pertama = {(1,1),(1,2),(1,3),(1,4),(1,5),(1,6)} = n(A) = 6</p>
+                  <p>Mata dadu kedua = {(1,4),(2,4),(3,4),(4,4),(5,4),(6,4)} = n(B) = 6</p>
+                  <p>P(A ∩ B) = P(A) x P(B)</p>
+                  <p>P(A ∩ B) = (n(A)/n(S)) x (n(B)/n(S))</p>
+                  <p class="bbbb">P(A ∩ B) = 6/36 x 6/36 = 1/6 x 1/6 = 1/36</p>
+                <li>Kejadian Saling Lepas
+                  <p>Kejadian saling lepas adalah dua kejadian yang tidak bisa terjadi bersamaan</p>
+                  <div class="y"><p class="i">P(A ∪ B) = P(A) + P(B)</p></div>
+                  <p>Contoh sederhana memahami Kejadian saling lepas</p>
+                  <p>irisan A dan B sama dengan nol. Dalam matematika, dapat dituliskan dengan diagram venn, peluang kejadian majemuk saling lepas dapat digambarkan seperti ini:</p>
+                  <div class="y"><img class="aaa" src="majemuk saling lepas.png" alt=""></div>
+                  <p class="aaaa">dari peluang kejadian majemuk saling lepas adalah munculnya angka genap atau angka ganjil pada pelemparan dadu. </p>
+                  <p class="aaaa">Jika dituliskan menggunakan rumus matematika, maka bentuknya akan seperti ini:</p>
+                  <p>Semesta (S) = {1, 2, 3, 4, 5, 6}</p>
+                  <p>Ganjil (A) = {1, 3, 5}</p>
+                  <p>Genap (B) = {2, 4, 6}</p>
+                  <div class="aaaa">Maka, untuk mengetahui banyaknya kejadian masing-masing, dapat ditulis sebagai berikut:</div>
+                  <p>n(S) = 6</p>
+                  <p>n(A) = 3</p>
+                  <p>n(B) = 3</p>
+                  <p class="aaaa">Kemudian, untuk menghitung peluang kejadian majemuk munculnya angka genap, kamu tinggal membagi jumlah anggota (A) dengan (S). Dari keterangan di atas, diketahui kalau n(A) = 3 dan n(S) = 6. Sehingga, peluang munculnya angka ganjil adalah n(A) / n(S) = 3/6 atau 1/2. Karena jumlah n(A) dan n(B) sama, maka peluang munculnya angka genap juga 1/2.</p>
+                  <p class="aaaa">Lalu, berapa peluang kejadian majemuk saling lepasnya? Untuk menghitung peluang kejadian saling lepas, kamu tinggal menjumlahkan peluang dari setiap kejadian yang terjadi. Dalam matematika, aturan peluang kejadian majemuk saling lepas dapat dituliskan sebagai berikut:</p>
+                  <div class="y"><p class="i">P(A ∪ B) = P(A) + P(B)</p></div>
+                  <p class="aaaa">Masukkan nilai peluang (A) dan peluang (B), sesuai dengan rumus di atas:</p>
+                  <p>P(A ∪ B) = P(A) + P(B)</p></p>
+                  <p>P(A ∪ B) = 1/2 + 1/2</p>
+                  <p>P(A ∪ B) = 1</p>
+                  <p class="bbbb">Sehingga, peluang gabungan A dan B adalah 1.</p>
+                <li>Kejadian Tidak Saling Lepas
+                  <p>Kejadian tidak saling adalah kejadian yang bisa berlangsung secara bersamaan</p>
+                  <div class="y"><p class="s">P(A ∪ B) = P(A) + P(B) - P(A ∩ B)</p></div>
+                  <p>Contoh sederhana memahami kejadian tidak saling lepas</p>
+                  <p>Berbeda dengan peluang kejadian majemuk saling lepas, peluang kejadian tidak saling lepas memiliki peluang yang saling beririsan. Atau irisan A dan B tidak sama dengan nol. Dalam matematika, dituliskan dengan n(A౧B) ≠ 0. Sedangkan dalam diagram venn, peluang kejadian majemuk tidak saling lepas dapat digambarkan seperti ini:</p>
+                  <div class="y"><img class="aaa" src="majemuk tidak saling lepas.png" alt=""></div>
+                  <p class="aaaa">Contoh kejadian majemuk tidak saling lepas misalnya ketika di kelas terdapat 50 siswa. Dari 50 siswa tersebut, terdapat 26 siswa yang menyukai Bahasa Inggris, 19 orang yang menyukai Matematika, dan 5 orang yang menyukai keduanya. Kemudian, kamu diminta untuk menghitung peluang terpilihnya siswa yang menyukai Bahasa Inggris atau Matematika.</p>
+                  <p class="aaaa">Dari soal di atas, siswa yang menyukai Bahasa Inggris merupakan kejadian (A) dan siswa yang menyukai Matematika adalah kejadian (B).</p>
+                  <p>Sehingga dapat ditulis :</p>
+                  <p>n(S) = 50</p>
+                  <p>n(A) = Banyaknya siswa yang menyukai Bahasa Inggis = 21</p>
+                  <p>P(A) = (n(A)/n(S)) = 21/50</p>
+                  <p>n(B) = Banyak siswa yang menyukai Matematika = 19</p>
+                  <p>P(B) = (n(B)/n(S)) = 19/50</p>
+                  <p>n(A ∩ B) = Banyak siswa yang menyukai Bahasa Inggris dan Matematika = 5</p>
+                  <p>P(A ∩ B) = (n(A ∩ B)/n(S)) = 5/50</p>
+                  <p class="aaaa">Maka peluang terpilihnya siswa yang menyukai Bahasa Inggris atau Matematika adalah:</p>
+                  <p>P(A ∪ B) = P(A) + P(B) - P(A ∩ B)</p>
+                  <p>P(A ∪ B) = 21/50 + 19/50 - 5/50</p>
+                  <p>P(A ∪ B) = 35/50</p>
+                  <p class="bbbb">P(A ∪ B) = 7/10</p>
+              </ol>
+            <h3 class="sub">J. Peluang Kejadian Bersyarat </h3>
+              <p class="qq">Peluang kejadian bersyarat adalah peluang suatu kejadian terjadi yang dipengaruhi kejadian atau suatu syarat.</p>  
+              <ol class="a">
+                <li>Peluang kejadian A, tetapi dengan syarat kejadian B terjadi lebih awal
+                  <p>Dua kejadian dikatakan saling bebas jika munculnya kejadian pertama tidak mempengaruhi peluang munculnya kejadian kedua</p>
+                  <div class="y"><p class="i">P(AIB) = P(A ∩ B)/P(B)</p></div>
+                <li>Peluang kejadian B, tetapi dengan syarat kejadian A terjadi lebih awal
+                  <p>Kejadian saling lepas adalah dua kejadian yang tidak bisa terjadi bersamaan</p>
+                  <div class="y"><p class="i">P(BIA) = P(A ∩ B)/P(A)</p></div>
+              </ol>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

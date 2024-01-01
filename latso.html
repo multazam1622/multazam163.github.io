@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chancify</title>
+    <link rel="stylesheet" href="latso/latso.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link
+    href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    rel="stylesheet"/>
+    <script src="latso/latso.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">Chancify</span>
+      </div>
+
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">Chancify</span>
+        </div>
+
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="index.html" class="nav-link">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="link">Chancify</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="materi.html" class="nav-link">
+                <i class='bx bx-book-alt icon'></i>
+                <span class="link">Materi</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="hitung.html" class="nav-link">
+                <i class='bx bx-calculator icon'></i>
+                <span class="link">Hitung Cepat</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="latso.html" class="nav-link">
+                <i class='bx bxs-book-open icon'></i>
+                <span class="link">Latihan Soal</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="tombol.html" class="nav-link">
+                <i class='bx bx-question-mark icon'></i>
+                <span class="link">Quis</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="bottom-cotent">
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-log-out icon"></i>
+                <span class="link">Penyusun</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="overlay"></section>
+
+    <button class="chatbot-toggler">
+      <span class="material-symbols-rounded">mode_comment</span>
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+      <header>
+        <h2>Chancify</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>
+          <p>Hai, apa kabar? 👋<br>Apa yang ingin kamu tanyakan?</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Masukan Pesan..." spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+    </div>
+    <div class="ff">
+        <div class="ww">
+            <div class="uu">
+              <h1 class="w">LATIHAN SOAL</h1>
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer1')">
+                    Dua buah dadu dilempar 72 kali. Frekuensi harapan muncul jumlah mata dadu lebih besar dari 10 adalah ...
+                    </div>
+                    <div class="answer" id="answer1">
+                      <h4>Penyelesaian</h4>
+                      <p>Jumlah mata dadu lebih besar dari 10 adalah 11 dan 12, kemungkinan-kemungkinannya adalah {(5,6),(6,5),(6,6)}, sehingga peluangnya adalah</p>
+                      <p> P = 3/36.</p>
+                      <p> Frekuensi harapannya adalah :</p>
+                      <p>F<sub>H</sub> = n.P = 72 x 3/36 = 6</p>
+                    </div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer2')">
+                    Dari 1 set kartu bridge diambil 1 kartu. Peluang terambil kartu King atau kartu berwarna hitam adalah ...
+                    </div>
+                    <div class="answer" id="answer2">
+                      <h4>Penyelesaian</h4>
+                      <p>Dalam 1 set kartu bridge terdapat 4 kartu king dan 26 kartu berwarna hitam, namun ada 2 kartu king yang berwarna hitam.</p>
+                      <p>P = 4/52 + 26/52 - 2/52 = 28/52</p>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer3')">
+                    Dari 2 dadu dan 1 koin dilempar 1 kali. Peluang muncul angka pada poin dan jumlah mata dadu 4 pada dadu adalah ...
+                    </div>
+                    <div class="answer" id="answer3">
+                      <h4>Penyelesaian</h4>
+                      <p>Kejadian di atas adalah kejadian saling bebas, Ciri kejadian saling bebas adalah ada penggunaan kata "DAN".</p>
+                      <ol>
+                        <li>Kejadian 1 adalah koin. Peluang muncul angka pada koin adalah P<sub>1</sub> = 1/2</li>
+                        <li>Kejadian 2 adalah dadu. Peluang muncul jumlah mata dadu 4 adalah : {(1,3),(2,2),(3,1)}.
+                          <p>P<sub>2</sub> = 3/36</p>
+                        </li>
+                        <li>Peluang adalah
+                          <p>P = P<sub>1</sub> x P<sub>2</sub></p>
+                          <p>P = 1/2 x 3/36 = 3/72 = 1/24</p>
+                        </li>
+                      </ol>
+                    </div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer4')">
+                    Ayah dan ibu ingin mempunyai 2 orang anak. Peluang anak pertama laki-laki dan anak kedua prempuan adalah ...
+                    </div>
+                    <div class="answer" id="answer4">
+                      <h4>Penyelesaian</h4>
+                      <p>Kejadian di atas adalah kejadian saling bebas. Ciri kejadian saling bebas adalah ada penggunaan kata "DAN". Peluang mendapatkan anak laki-laki maupun prempuan adalah 1/2.</p>
+                      <p>P = P<sub>1</sub> x P<sub>2</sub> x P<sub>3</sub></p>
+                      <p>P = 1/2 x 1/2 x 1/2 = 1/8</p>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer5')">
+                    Dari angka-angka 2, 3, 4, 5, 6 akan disusun 3 angka berlainan. Banyak susunan angka yang dapat dibuat jika angka tersebut harus ganjil adalah ...
+                    </div>
+                    <div class="answer" id="answer5">
+                      <h4>Penyelesaian</h4>
+                      <p>Banyak susunan angka yang dapat dibuat adalah 2 x 4 x 3 = 24</p>
+                    </div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer6')">
+                    Dari angka-angka 1, 2, 3, 4, 5, 6, 7 akan disusun 4 angka. Banyak susunan angka yang dapat dibuat jika angka harus lebih besar dari 5000 dan berlainan adalah ...
+                    </div>
+                    <div class="answer" id="answer6">
+                      <h4>Penyelesaian</h4>
+                      <p>Banyak susunan angka yang dapat dibuat adalah 3 x 6 x 5 x 4 = 360</p>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer7')">
+                    4 orang laki-laki dan 3 orang prempuan duduk dengan posisi berjajar. Banyak susunan posisi duduk yang mungkin jika laki-laki dan prempaun harus berselang-seling adalah ...
+                    </div>
+                    <div class="answer" id="answer7">
+                      <h4>Penyelesaian</h4>
+                      <p>Banyak susunan posisi duduk yang mungkin adalah 4! x 3! = 24 x 6 = 144</p>
+                    </div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer8')">
+                    Empat orang laki-laki dan tiga orang prempuan duduk dengan posisi berjajar. Banyak susunan posisi duduk yang mungkin jika prempuan harus berdampingan adalah ...
+                    </div>
+                    <div class="answer" id="answer8">
+                      <h4>Penyelesaian</h4>
+                      <p>Banyak susunan posisi duduk yang mungkin adalah 5! x 3! = 120 x 6 = 720</p>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer9')">
+                    Enam orang pengurus OSIS sedang mengadakan rapat dengan posisi duduk melingkar. Banyak susunan duduk yang dapat dibuat jika ketua dan sekretaris harus berdampingan adalah ...
+                    </div>
+                    <div class="answer" id="answer9">
+                      <h4>Penyelesaian</h4>
+                      <p></p>
+                    </div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer10')">
+                    Nuy, Diah, Tika dan 3 orang kawannya sedang duduk dengan posisi duduk melingkar. Banyak susunan duduk yang dapat dibuat jika Nuy, Diah, dan Tika tidak boleh berdampingan adalah ...
+                    </div>
+                    <div class="answer" id="answer10">Jawaban untuk Pertanyaan 2.</div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer11')">
+                    Banyak susunan kata yang dibuat dari kata "MATEMATIKA" adalah ...
+                    </div>
+                    <div class="answer" id="answer11">Jawaban untuk Pertanyaan 1.</div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer12')">
+                    Dari huruf-huruf M, O, N, E, dan Y dapat dibuat 120 kata. Jika disusun secara alfabetikal, kata "MONEY" berda pada urutan ke - ...
+                    </div>
+                    <div class="answer" id="answer12">Jawaban untuk Pertanyaan 2.</div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer13')">
+                    Linda dan 7 orang temannya mengikuti seleksi tim bola voli. Banyak susunan tim yang dapat dibuat jika Linda harus jadi ketua tim adalah ...
+                    </div>
+                    <div class="answer" id="answer13">Jawaban untuk Pertanyaan 1.</div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer14')">
+                    Dari 15 soal yang ada, siswa diminta mengerjakan 10 soal, tetapi soal nomor 1-5 harus dijawab. Banyak kombinasi soal yang dapat dipilih adalah ...
+                    </div>
+                    <div class="answer" id="answer14">Jawaban untuk Pertanyaan 2.</div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer15')">
+                    Lima pasang suami istri menghadiri pesta. Banyak jabat tangan yang terjadi jika dengan pasangan sendiri tidak perlu jabat tangan adalah ...
+                    </div>
+                    <div class="answer" id="answer15">Jawaban untuk Pertanyaan 1.</div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer16')">
+                    Dari 4 buah jeruk dan 3 buah apel akan dipilih 2 buah. Peluang terpilih sekurang-kurangnya 1 jeruk adalah ...
+                    </div>
+                    <div class="answer" id="answer16">Jawaban untuk Pertanyaan 2.</div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer17')">
+                    Dari angka-angka 2, 3, 4, 5, 6 akan disusun 3 angka berlainan. Banyak susunan angka yang dapat dibuat jika angka harus lebih besar dari 4000 dan genap adalah ...
+                    </div>
+                    <div class="answer" id="answer17">Jawaban untuk Pertanyaan 1.</div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer18')">
+                    Ayah dan ibu ingin mempunyai 3 orang anak. Peluang ketiga anaknya prempuan adalah ...
+                    </div>
+                    <div class="answer" id="answer18">Jawaban untuk Pertanyaan 2.</div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer19')">
+                    Adi, Budi, Ani, dan Ita sedang duduk berjajar. Peluang Budi duduk di sebelah Ita adalah ...
+                    </div>
+                    <div class="answer" id="answer19">Jawaban untuk Pertanyaan 1.</div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer20')">
+                    Dari kota A ke kota B ada 3 jalan, sedangkan dari kota B ke kota C ada 4 jalan. Banyak cara menuju kota C dari kota A melalui kota B dan kembali ke kota A tetapi dengan jalur yang berbeda adalah ...
+                    </div>
+                    <div class="answer" id="answer20">Jawaban untuk Pertanyaan 2.</div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer21')">
+                    Dari 1 koin dan 1 dadu dilempar 1 kali. Peluang muncul gambar pada koin dan angka ganjil pada dadu adalah ...
+                    </div>
+                    <div class="answer" id="answer21">Jawaban untuk Pertanyaan 1.</div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer22')">
+                    Dari angka-angka 2, 3, 4, 5, 6, 7, dam 8 akan dibuat 3 angka. Banyak susunan angka yang dapat dibuat jika angka harus di antara 570 dan 740 adalah ...
+                    </div>
+                    <div class="answer" id="answer22">Jawaban untuk Pertanyaan 2.</div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer23')">
+                    Dari 7 buah apel dalam kardus, diketahui 5 di antaranya busuk. Diambil 2 apel dari kardus secara acak, peluang terambil kedua busuk adalah ...
+                    </div>
+                    <div class="answer" id="answer23">Jawaban untuk Pertanyaan 1.</div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer24')">
+                    Dua buah dadu dilempar 1x. Peluang muncul kedua mata dadunya ganjil adalah ...
+                    </div>
+                    <div class="answer" id="answer24">Jawaban untuk Pertanyaan 2.</div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer1')">
+                    Pertanyaan 1
+                    </div>
+                    <div class="answer" id="answer1">Jawaban untuk Pertanyaan 1.</div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer2')">
+                    Pertanyaan 2
+                    </div>
+                    <div class="answer" id="answer2">Jawaban untuk Pertanyaan 2.</div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer1')">
+                    Pertanyaan 1
+                    </div>
+                    <div class="answer" id="answer1">Jawaban untuk Pertanyaan 1.</div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer2')">
+                    Pertanyaan 2
+                    </div>
+                    <div class="answer" id="answer2">Jawaban untuk Pertanyaan 2.</div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer1')">
+                    Pertanyaan 1
+                    </div>
+                    <div class="answer" id="answer1">Jawaban untuk Pertanyaan 1.</div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer2')">
+                    Pertanyaan 2
+                    </div>
+                    <div class="answer" id="answer2">Jawaban untuk Pertanyaan 2.</div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer1')">
+                    Pertanyaan 1
+                    </div>
+                    <div class="answer" id="answer1">Jawaban untuk Pertanyaan 1.</div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer2')">
+                    Pertanyaan 2
+                    </div>
+                    <div class="answer" id="answer2">Jawaban untuk Pertanyaan 2.</div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer1')">
+                    Pertanyaan 1
+                    </div>
+                    <div class="answer" id="answer1">Jawaban untuk Pertanyaan 1.</div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer2')">
+                    Pertanyaan 2
+                    </div>
+                    <div class="answer" id="answer2">Jawaban untuk Pertanyaan 2.</div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer1')">
+                    Pertanyaan 1
+                    </div>
+                    <div class="answer" id="answer1">Jawaban untuk Pertanyaan 1.</div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer2')">
+                    Pertanyaan 2
+                    </div>
+                    <div class="answer" id="answer2">Jawaban untuk Pertanyaan 2.</div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer1')">
+                    Pertanyaan 1
+                    </div>
+                    <div class="answer" id="answer1">Jawaban untuk Pertanyaan 1.</div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer2')">
+                    Pertanyaan 2
+                    </div>
+                    <div class="answer" id="answer2">Jawaban untuk Pertanyaan 2.</div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer1')">
+                    Pertanyaan 1
+                    </div>
+                    <div class="answer" id="answer1">Jawaban untuk Pertanyaan 1.</div>
+                    <hr>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question" onclick="toggleAnswer('answer2')">
+                    Pertanyaan 2
+                    </div>
+                    <div class="answer" id="answer2">Jawaban untuk Pertanyaan 2.</div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
